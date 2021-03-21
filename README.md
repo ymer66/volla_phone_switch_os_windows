@@ -20,7 +20,8 @@ fastboot devices
 
 You must see the phone listed in fastboot mode:
 
-```C:\Users\User\Downloads\platform-tools_r31.0.0-windows\platform-tools>fastboot devices
+```
+C:\Users\volla\platform-tools_r31.0.0-windows\platform-tools>fastboot devices
 GS290CTxxxxxxx  fastboot
 ```
 
