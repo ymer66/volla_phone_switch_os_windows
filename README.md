@@ -28,6 +28,18 @@ fastboot flashing unlock
 
 confirm on the phone with volume up.
 
+## SailfishOS to VollaOS (untested) ##
+
+- item from Sailfish install
+- Download TWRP https://volla.tech/filedump/twrp.img
+- Download latest VollaOS https://ota.volla.tech/builds
+- Start phone in fastboot and execute:
+fastboot recovery twrp.img
+- Start phone in recovery mode
+- Select Advanced ADB Sideload / wipe both
+adb sideload volla-9.0-....
+
+
 - Run following commands:
 
 ```bash
