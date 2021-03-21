@@ -18,7 +18,7 @@
 fastboot devices
 ```
 
-      You must see the phone listed in fastboot mode: "GS290xxxxxxxx  fastboot"
+You must see the phone listed in fastboot mode: "GS290xxxxxxxx  fastboot"
 
 - Unlock with bootloader with:
 
@@ -26,7 +26,7 @@ fastboot devices
 fastboot flashing unlock
 ```
 
-       confirm on the phone with volume up.
+confirm on the phone with volume up.
 
 - Run following commands:
 
