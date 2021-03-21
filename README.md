@@ -48,7 +48,9 @@ fastboot reboot
 - Download TWRP https://volla.tech/filedump/twrp.img
 - Download latest VollaOS https://ota.volla.tech/builds (as of the writting https://ota.volla.tech/builds/volla-9.0-20201019-nightly-k63v2_64_bsp-signed.zip)
 - Start phone in fastboot and execute:
+```
 fastboot recovery twrp.img
+```
 - Start phone in recovery mode
 - Select Advanced ADB Sideload / wipe both
 ```
