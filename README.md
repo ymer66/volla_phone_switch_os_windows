@@ -18,7 +18,11 @@
 fastboot devices
 ```
 
-You must see the phone listed in fastboot mode: "GS290xxxxxxxx  fastboot"
+You must see the phone listed in fastboot mode:
+
+```C:\Users\User\Downloads\platform-tools_r31.0.0-windows\platform-tools>fastboot devices
+GS290CTxxxxxxx  fastboot
+```
 
 - Unlock with bootloader with:
 
