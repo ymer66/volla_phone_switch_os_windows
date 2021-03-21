@@ -28,6 +28,16 @@ fastboot flashing unlock
 
 confirm on the phone with volume up.
 
+- Run following commands:
+
+```bash
+fastboot flash boot hybris-boot.img
+fastboot flash userdata sailfish.img001
+fastboot flash logo logo.bin
+fastboot flash lk lk-yggdrasil.img
+fastboot reboot
+```
+
 ## SailfishOS to VollaOS (untested) ##
 
 - item from Sailfish install
@@ -40,12 +50,4 @@ fastboot recovery twrp.img
 adb sideload volla-9.0-....
 
 
-- Run following commands:
-
-```bash
-fastboot flash boot hybris-boot.img
-fastboot flash userdata sailfish.img001
-fastboot flash logo logo.bin
-fastboot flash lk lk-yggdrasil.img
-fastboot reboot
-```
+-
