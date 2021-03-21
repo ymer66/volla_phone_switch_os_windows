@@ -1,5 +1,7 @@
 # Install Sailfish to Volla Phone under Windows 10
 
+VollaOS to Sailfish OS
+
 - download Adroid Platform Tools for Windows and extract the ZIP file [https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)
 - download the Google USB Driver and extract the ZIP file [https://developer.android.com/studio/run/win-usb](https://developer.android.com/studio/run/win-usb)
 - Download Sailfish for Volla [https://gitlab.com/sailfishos-porters-ci/yggdrasil-ci/-/jobs/artifacts/master/download?job=run-build-lvm](https://gitlab.com/sailfishos-porters-ci/yggdrasil-ci/-/jobs/artifacts/master/download?job=run-build-lvm%5C%5C)
