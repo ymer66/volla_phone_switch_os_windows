@@ -51,7 +51,7 @@ fastboot reboot
 ```
 fastboot recovery twrp.img
 ```
-- Start phone in recovery mode
+- Start phone in recovery mode. Same procedure as for fastboot mode but select Recovery with volume up key and confirm with volume down key
 - Select Advanced ADB Sideload / wipe both
 ```
 adb sideload volla-9.0-20201019-nightly-k63v2_64_bsp-signed.zip
