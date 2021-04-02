@@ -49,7 +49,28 @@ fastboot reboot
 - Download latest VollaOS https://ota.volla.tech/builds (as of the writting https://ota.volla.tech/builds/volla-9.0-20201019-nightly-k63v2_64_bsp-signed.zip)
 - Start phone in fastboot and execute:
 ```
-fastboot recovery twrp.img
+fastboot flash recovery twrp.img
+```
+- Start phone in recovery mode. Same procedure as for fastboot mode but select Recovery with volume up key and confirm with volume down key
+- Select Advanced ADB Sideload / wipe both
+```
+adb sideload volla-9.0-20201019-nightly-k63v2_64_bsp-signed.zip
+```
+- after the transfer follow the instructions on the phone to reboot
+
+## Convert Gigaset GS290 to VollaPhone ##
+
+- Download TWRP for GS290
+- Unzip the Volla ROM and remove the file compatibilty.zip
+- Remove in the file /META-INF/com/google/android/updater-script the first 4 lines:
+```
+(!less_than_int(1603106573, getprop("ro.build.date.utc"))) || abort("E3003: Can't install this package (Mon Oct 19 11:22:53 UTC 2020) over newer build (" + getprop("ro.build.date") + ").");
+getprop("ro.product.device") == "k63v2_64_bsp" || abort("E3004: This package is for \"k63v2_64_bsp\" devices; this is a \"" + getprop("ro.product.device") + "\".");
+```
+- Create a new zip with the canged files
+- Start phone in fastboot and execute:
+```
+fastboot flash recovery twrp.img
 ```
 - Start phone in recovery mode. Same procedure as for fastboot mode but select Recovery with volume up key and confirm with volume down key
 - Select Advanced ADB Sideload / wipe both
